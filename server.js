@@ -95,7 +95,7 @@ app.get("/getname", (request, response) => {
     const token = request.headers.authorization?.split(' ')[1]; // Remove o "Bearer" se presente
 
     if (!token) {
-        return response.status(401).json({ message: "Token não fornecido" });
+        return response.status(401).json({ message: "Token não fornecido!" });
     }
 
     try {
